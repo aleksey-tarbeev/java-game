@@ -1,20 +1,16 @@
 public abstract class Character {
     private String name;
-    private int health;
-    public Character (String name, int health) {
-        this.name = name;
-        this.health = health;
 
+    public Character (String name) {
+        this.name = name;
     }
     public String getName () {
         return name;
     }
-    public int getHealth () {
-        return health;
-    }
-    public abstract void display ();
-    
-    
 
-    
+    public abstract void display (); 
+    public abstract int getHealth();
+    public abstract int getAttakPower();
+    public abstract void setHealth(int health);
+    public abstract void setAttakPower(int attakPower);
 }

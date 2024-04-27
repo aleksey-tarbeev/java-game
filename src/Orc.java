@@ -1,8 +1,8 @@
-public class Human extends Character {
-    private String race = "человек";
-    private int health = 100;
-    private int attakPower = 15;
-    public Human (String name) {
+public class Orc extends Character{
+    private String race = "орк";
+    private int health = 150;
+    private int attakPower = 30;
+    public Orc (String name) {
         super(name);
     }
 
@@ -25,5 +25,3 @@ public class Human extends Character {
        this.attakPower = attakPower;
     } 
 }
-
-    
