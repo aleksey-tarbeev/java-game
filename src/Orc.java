@@ -23,5 +23,19 @@ public class Orc extends Character{
 
     public void setAttakPower(int attakPower) {
        this.attakPower = attakPower;
+    }
+
+    public void takeDamage(int damage) {
+        health -= damage;
+        if (health <= 0) {
+            die();
+        }
+    }
+
+    public void attak(Character target) {
+        target.takeDamage(attakPower);
     } 
+    public void die () {
+        System.out.println(getName() + " погиб");
+    }
 }
