@@ -1,5 +1,4 @@
 public class Orc extends Character{
-    private String race = "орк";
     private int health = 150;
     private int attakPower = 30;
     public Orc (String name) {
@@ -11,10 +10,6 @@ public class Orc extends Character{
     }
     public int getAttakPower () {
         return attakPower;
-    }
-
-    public void display () {
-        System.out.println("Раса:" + race + "\n" + "Имя:" + super.getName() + "\n" + "Здоровье:" + health + "\n" + "Сила атаки:" + attakPower);
     }
 
     public void setHealth(int health) {
