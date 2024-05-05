@@ -33,4 +33,7 @@ public class Orc extends Character{
     public void die () {
         System.out.println(getName() + " погиб");
     }
+    public void display () {
+        System.out.println("Раса:" + this.getClass() + "\n" + "Имя:" + super.getName() + "\n" + "Здоровье:" + health + "\n" + "Сила атаки:" + attakPower);
+    }
 }
