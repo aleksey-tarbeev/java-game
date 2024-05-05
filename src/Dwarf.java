@@ -1,7 +1,7 @@
-public class Elf extends Character{
-    private int health = 100;
-    private int attakPower = 10;
-    public Elf (String name) {
+public class Dwarf extends Character {
+    private int health = 90;
+    private int attakPower = 30;
+    public Dwarf (String name) {
         super(name);
     }
 
